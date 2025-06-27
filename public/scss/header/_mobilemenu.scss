@@ -136,23 +136,6 @@
         .has-menu-child-item {
             >a {
                 position: relative;
-
-                &::after {
-                    position: absolute;
-                    content: "\e9b1";
-                    font-family: 'feather' !important;
-                    right: 10px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    transition: 0.4s;
-                    font-size: 18px;
-                }
-
-                &.open {
-                    &::after {
-                        content: "\e996";
-                    }
-                }
             }
         }
 

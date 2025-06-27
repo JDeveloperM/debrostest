@@ -88,7 +88,7 @@ const Header = ({ headerTransparent, headerSticky, btnClass }) => {
                         setActiveMobileMenu(!activeMobileMenu);
                       }}
                     >
-                      <i className="fa-sharp fa-regular fa-bars"></i>
+                      ☰
                     </button>
                   </div>
                 </div>

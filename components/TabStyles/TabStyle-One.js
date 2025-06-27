@@ -123,7 +123,6 @@ const TabStyleOne = () => {
                               <ul className="list-style--1">
                                 {tab.subItem.map((item, i) => (
                                   <li key={i}>
-                                    <i className="fa-regular fa-circle-check"></i>
                                     {item.text}
                                   </li>
                                 ))}
@@ -139,7 +138,6 @@ const TabStyleOne = () => {
       style={{ pointerEvents: tab.button.href ? "auto" : "none", opacity: tab.button.href ? 1 : 0.5 }} // Disable styling
     >
       {tab.button.href ? tab.button.label : "Coming Soon"}
-      <i className="fa-sharp fa-solid fa-rocket ps-2"></i>
     </HashLink>
   ) : null}
 
@@ -152,7 +150,6 @@ const TabStyleOne = () => {
       style={{ pointerEvents: tab.button2.href ? "auto" : "none", opacity: tab.button2.href ? 1 : 0.5 }} // Disable styling
     >
       {tab.button2.href ? tab.button2.label : "Coming Soon"}
-      <i className="fa-sharp fa-solid fa-book ps-2"></i>
     </HashLink>
   ) : null}
 </div>
