@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   assetPrefix: "./",
-  output: 'export',  // Enables static HTML export
-  reactStrictMode: true,
+  output: 'export',
+  reactStrictMode: false,
+  poweredByHeader: false,
+  generateEtags: false,
   images: {
-    unoptimized: true, // Required for static export
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -26,26 +28,56 @@ const nextConfig = {
   },
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
-  // Add webpack configuration to handle build issues
-  webpack: (config) => {
-    // Disable webpack cache to avoid serialization issues
+  // Completely disable SWC to avoid build errors
+  swcMinify: false,
+  compiler: {
+    removeConsole: false,
+  },
+  // Minimal webpack configuration for maximum compatibility
+  webpack: (config, { dev, isServer }) => {
+    // Disable all caching
     config.cache = false;
 
-    // Ignore problematic modules during build
+    // Disable problematic optimizations
+    if (!dev && !isServer) {
+      config.optimization = {
+        ...config.optimization,
+        minimize: false,
+        splitChunks: false,
+        runtimeChunk: false,
+      };
+    }
+
+    // Provide fallbacks for Node.js modules
     config.resolve.fallback = {
-      ...config.resolve.fallback,
       fs: false,
       net: false,
       tls: false,
+      crypto: false,
+      stream: false,
+      url: false,
+      zlib: false,
+      http: false,
+      https: false,
+      assert: false,
+      os: false,
+      path: false,
+      querystring: false,
+      util: false,
+      buffer: false,
+      events: false,
     };
 
+    // Ignore problematic modules
+    config.externals = config.externals || [];
+    if (!isServer) {
+      config.externals.push({
+        'utf-8-validate': 'commonjs utf-8-validate',
+        'bufferutil': 'commonjs bufferutil',
+      });
+    }
+
     return config;
-  },
-  // Disable SWC minification to avoid SWC errors
-  swcMinify: false,
-  // Use Terser for minification instead
-  experimental: {
-    forceSwcTransforms: false,
   },
 }
 
