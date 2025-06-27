@@ -3,6 +3,8 @@ import { useHashRouter } from "../../utils/hashRouter";
 import Image from "next/image";
 import HashLink from "../Common/HashLink";
 
+// Fixed dropdown arrows and close button icons for Arweave compatibility
+
 import MenuData from "../../data/header.json";
 
 import NavProps from "./NavProps";
