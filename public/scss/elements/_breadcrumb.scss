@@ -3,7 +3,7 @@
 ======================*/
 .breadcrumb-style-1 {
     background-color: var(--color-blackest) !important;
-    background: url(../../images/bgbread.jpg); /* Using fallback image instead of video */
+    background: url(../../images/bgbread.jpg); /* Using correct relative path from SCSS to public */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;

@@ -4,7 +4,13 @@ import React from "react";
 const Breadcrumb = ({ title, text, videoSrc }) => {
   return (
     <>
-     <div className="breadcrumb-area breadcarumb-style-1" style={{ backgroundColor: "#1a2029" }}>
+     <div className="breadcrumb-area breadcarumb-style-1" style={{
+        backgroundColor: "#1a2029",
+        backgroundImage: "url(./images/bgbread.jpg)",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "top center"
+      }}>
   {videoSrc && (
     <video
       autoPlay
