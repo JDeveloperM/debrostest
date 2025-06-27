@@ -1,0 +1,49 @@
+{
+  "roadmap": [
+    {
+      "heading": "PHASE 1 - Genesis",
+      "date": "",
+      "isCheck": true,
+      "isLoading": false,
+      "isBorader": true,
+      "title": "",
+      "desc": "In August 2024, two dreamers sparked DeBros with a wild vision to flip decentralized tech upside down. We rolled out Payme.sol in beta for slick crypto payments, while AnChat—a game-changer that blends private chats with a social twist, keeping your privacy on lock—started taking shape. DeViewer, a Web3-powered remote access gem, and ABT Protocol, a clever twist that shakes up how tokens live and breathe, joined the mix too. We’re also cooking up browser extensions, Telegram bots, and a decentralized Web3 email, all still in the works. This phase was about lighting the fuse and chasing freedom and privacy hard."
+    },
+    {
+      "heading": "PHASE 2 - Beta Launch & Expansion",
+      "date": "",
+      "isCheck": false,
+      "isLoading": true,
+      "isBorader": true,
+      "title": "",
+      "desc": "Our small crew grew as two new builders hopped on board, turning our duo into a tight-knit team. The DeBros Network, Node, and CLI come alive, crafting a decentralized playground where apps can roam unbound. AnChat, DeViewer, and ABT Protocol hit beta, ready to test the waters. We’re eyeing team-ups with other cool projects out there, keeping the door wide open for big ideas. Our community’s vibe will help us tweak these tools, keeping the focus on what clicks."
+    },
+    {
+      "heading": "PHASE 3 - Tokenomics & Promotion",
+      "date": "",
+      "isCheck": false,
+      "isLoading": true,
+      "isBorader": true,
+      "title": "",
+      "desc": "Tokens and NFTs roll in, letting our crew juice up the network and grab sweet perks. We’ll crank the hype, flaunting AnChat’s private-chat-meets-social edge, DeViewer’s remote tricks, and ABT’s token-twisting charm through stories that hit home. A slick dashboard makes diving in a snap, while feedback from our people keeps us sharp, tuning our apps for that decentralized groove."
+    },
+    {
+      "heading": "PHASE 4 - Beta to Final",
+      "date": "",
+      "isCheck": false,
+      "isLoading": true,
+      "isBorader": true,
+      "title": "",
+      "desc": "The DeBros Network shifts into high gear, hosting apps in a wide-open ecosystem. AnChat, DeViewer, and ABT Protocol drop their polished versions, toughened up and ready to roll. The dashboard levels up, welcoming everyone with open arms. DePIN Hardware starts testing, able to host AI for NFT holders to tap into first. We’ll push the limits to make sure this thing can handle the big time."
+    },
+    {
+      "heading": "PHASE 5 - Expanding Horizons",
+      "date": "",
+      "isCheck": false,
+      "isLoading": true,
+      "isBorader": true,
+      "title": "",
+      "desc": "We hand the reins to the community with a DAO, keeping our soul decentralized. DePIN Hardware rolls out, ready to host AI for anyone to explore. New adventures kick off, pushing the DeBros Network to new heights with fresh ideas. We’ll share our core tech with the world and link up with like-minded crews, making DeBros a name that rings loud in the decentralized wild."
+    }
+  ]
+}

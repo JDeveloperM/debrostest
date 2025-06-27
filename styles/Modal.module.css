@@ -1,0 +1,311 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 15px;
+}
+
+.modalContainer {
+  background-color: #0c1015;
+  border-radius: 12px;
+  max-width: 450px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid #3772FF;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #1e2329;
+}
+
+.modalHeader h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #666;
+}
+
+.modalBody {
+  padding: 18px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.modalFooter {
+  padding: 12px 18px;
+  border-top: 1px solid #1e2329;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.qrContainer {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.qrCode {
+  max-width: 180px;
+  border: 1px solid #1e2329;
+  padding: 8px;
+  background-color: white;
+}
+
+.qrLoading {
+  width: 180px;
+  height: 180px;
+  background: #1e2329;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.secretKeyContainer {
+  background: #1e2329;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  word-break: break-all;
+  font-family: monospace;
+  border: 1px solid #2c3137;
+  font-size: 13px;
+}
+
+.recoveryKeysSection {
+  margin-bottom: 15px;
+}
+
+.recoveryKeysSection h4 {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.toggleIcon {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.toggleIcon.open {
+  transform: rotate(180deg);
+}
+
+.recoveryKeysGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 8px;
+  margin-top: 8px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, margin-top 0.3s ease;
+}
+
+.recoveryKeysGrid.open {
+  max-height: 300px;
+  margin-top: 8px;
+}
+
+.recoveryKey {
+  background: #1e2329;
+  padding: 6px;
+  border-radius: 6px;
+  font-family: monospace;
+  text-align: center;
+  border: 1px solid #2c3137;
+  font-size: 12px;
+}
+
+.recoveryKeysToggle {
+  background: none;
+  border: none;
+  color: #3772FF;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.recoveryKeysToggle:hover {
+  text-decoration: underline;
+}
+
+.verificationInputContainer {
+  margin-top: 15px;
+}
+
+.verificationInputContainer label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #fff;
+  font-size: 14px;
+}
+
+.verificationInput {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #2c3137;
+  border-radius: 6px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  background-color: #1e2329;
+  color: #fff;
+}
+
+.verifyButton {
+  background-color: #3772FF;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.verifyButton:hover {
+  background-color: #4a8cff;
+  transform: translateY(-2px);
+}
+
+.verifyButton.disabled {
+  background-color: #2c3137;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.cancelButton {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #2c3137;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.cancelButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Whitelist Modal Styles */
+.warningIcon {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.warningTitle {
+  text-align: center;
+  color: #ff6b6b;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.walletAddressBox {
+  background: #1e2329;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 15px 0;
+  word-break: break-all;
+}
+
+.walletAddressLabel {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.walletAddressValue {
+  font-family: monospace;
+  font-size: 14px;
+  color: #3772FF;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .modalContainer {
+    max-width: 100%;
+    width: 100%;
+    max-height: 95vh;
+  }
+
+  .modalHeader {
+    padding: 12px 15px;
+  }
+
+  .modalHeader h3 {
+    font-size: 15px;
+  }
+
+  .modalBody {
+    padding: 15px;
+    font-size: 13px;
+  }
+
+  .modalFooter {
+    padding: 10px 15px;
+    flex-direction: column;
+  }
+
+  .qrCode, .qrLoading {
+    max-width: 150px;
+    height: 150px;
+  }
+
+  .recoveryKeysGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .verifyButton, .cancelButton {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .secretKeyContainer {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .recoveryKey {
+    font-size: 11px;
+  }
+}
+
+
+
+

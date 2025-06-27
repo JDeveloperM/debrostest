@@ -1,0 +1,139 @@
+/* Policy Pages Styles */
+.rbt-main-content {
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+
+.rbt-daynamic-page-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.rbt-dashboard-content {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.banner-area {
+  padding: 30px 40px;
+}
+
+.settings-area .title {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--color-white);
+}
+
+.content-page {
+  padding: 40px;
+}
+
+.content-page.pb--50 {
+  padding-bottom: 50px;
+}
+
+.chat-box-list .content h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  color: var(--color-white);
+}
+
+.chat-box-list .content h4:first-child {
+  margin-top: 0;
+}
+
+.chat-box-list .content p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: var(--color-light);
+}
+
+.chat-box-list .content ul,
+.chat-box-list .content ol {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.chat-box-list .content ul li,
+.chat-box-list .content ol li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: var(--color-light);
+}
+
+.chat-box-list .content a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.chat-box-list .content a:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+.rbt-terms-content {
+  counter-reset: item;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.rbt-terms-content > li {
+  counter-increment: item;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.rbt-terms-content > li:before {
+  content: counter(item) ".";
+  font-weight: 600;
+  position: absolute;
+  left: -25px;
+  color: var(--color-primary);
+}
+
+.rbt-terms-content h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--color-white);
+}
+
+.rbt-terms-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .rbt-main-content {
+    margin-top: 80px;
+  }
+
+  .banner-area {
+    padding: 20px;
+  }
+
+  .content-page {
+    padding: 20px;
+  }
+
+  .settings-area .title {
+    font-size: 24px;
+  }
+
+  .chat-box-list .content h4 {
+    font-size: 20px;
+  }
+
+  .rbt-terms-content > li:before {
+    position: static;
+    display: inline-block;
+    margin-right: 5px;
+  }
+}

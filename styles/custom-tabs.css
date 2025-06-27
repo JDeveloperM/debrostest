@@ -1,0 +1,72 @@
+/* Custom Tab Styles */
+.rainbow-default-tab.style-three .nav-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  border: none;
+}
+
+.rainbow-default-tab.style-three .nav-tabs .nav-item {
+  margin: 0;
+}
+
+.rainbow-default-tab.style-three .nav-tabs .nav-link {
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  transition: all 0.3s ease;
+  min-width: auto;
+  height: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rainbow-default-tab.style-three .nav-tabs .nav-link:hover {
+  background-color: rgba(55, 114, 255, 0.1);
+  border-color: rgba(55, 114, 255, 0.3);
+}
+
+.rainbow-default-tab.style-three .nav-tabs .nav-link.active {
+  background: linear-gradient(90deg, #3772FF 0%, #3772FF 100%);
+  border-color: #3772FF;
+  color: #fff;
+}
+
+.rainbow-default-tab.style-three .nav-tabs .generator-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.rainbow-default-tab.style-three .nav-tabs .generator-icon img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .rainbow-default-tab.style-three .nav-tabs {
+    gap: 8px;
+  }
+  
+  .rainbow-default-tab.style-three .nav-tabs .nav-link {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  
+  .rainbow-default-tab.style-three .nav-tabs .generator-icon {
+    gap: 6px;
+    font-size: 12px;
+  }
+  
+  .rainbow-default-tab.style-three .nav-tabs .generator-icon img {
+    width: 16px;
+    height: 16px;
+  }
+}

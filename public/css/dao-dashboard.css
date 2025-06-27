@@ -1,0 +1,122 @@
+/* DAO Dashboard Styles */
+
+/* Sidebar Styles */
+.dao-sidebar-content {
+  display: flex;
+  flex-direction: column;
+  height: 94%;
+}
+
+.sidebar-social {
+  margin-top: auto;
+  padding: 20px 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.sidebar-social-icons a button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.sidebar-social-icons a button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+.sidebar-tagline {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  line-height: 1.4;
+  padding: 0 10px;
+}
+
+/* Project Header */
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.project-title-container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto; /* Center the title */
+}
+
+.project-logo-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  color: #a0a0a0;
+}
+
+.project-logo {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.project-owner {
+  font-size: 0.7rem;
+  margin-left: 5px;
+}
+
+.project-date {
+  font-size: 0.7rem;
+  margin-left: 10px;
+}
+
+/* Project Grids */
+.project-items-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.project-items-grid2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .project-items-grid, .project-items-grid2 {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-items-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .project-items-grid2 {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}

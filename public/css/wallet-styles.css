@@ -1,0 +1,110 @@
+/* Wallet Styles */
+.wallet-btn.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #2a2a2a;
+  color: #888;
+  border: 1px solid #444;
+}
+
+.whitelist-error {
+  background-color: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  color: #ff6b6b;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* These styles are for the dropdown menu */
+.connect-wallet-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: rgba(55, 114, 255, 0.1);
+  color: #3772FF;
+  border: 1px solid rgba(55, 114, 255, 0.3);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.connect-wallet-btn:hover {
+  background-color: rgba(55, 114, 255, 0.2);
+}
+
+/* These styles are for the main login buttons */
+.connect-wallet-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.connect-wallet-buttons .connect-wallet-btn {
+  background: linear-gradient(90deg, #6b66ff, #4a45ff);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  max-width: 300px;
+  transition: all 0.3s ease;
+}
+
+.connect-wallet-buttons .connect-wallet-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+  background: linear-gradient(90deg, #5b56ff, #3a35ff);
+}
+
+.connect-wallet-buttons .connect-wallet-btn.disabled {
+  background: #555;
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.connect-wallet-buttons .connect-wallet-btn.eth-btn {
+  background: linear-gradient(90deg, #6b66ff, #4a45ff);
+}
+
+.connect-wallet-buttons .connect-wallet-btn.sol-btn {
+  background: linear-gradient(90deg, #9945FF, #6b66ff);
+}
+
+.wallet-address {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.wallet-address.disabled {
+  opacity: 0.6;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #888;
+}
+
+.wallet-icon {
+  color: #3772FF;
+}
+
+.wallet-address.disabled .wallet-icon {
+  color: #888;
+}

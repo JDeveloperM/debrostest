@@ -1,0 +1,205 @@
+/* Staking Page Styles */
+.staking-card {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: rgba(20, 30, 48, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: calc(100% + 40px); /* Increased height by 40px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .staking-card {
+    height: calc(100% + 20px); /* Height for mobile devices */
+  }
+}
+
+.staking-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.staking-card-image {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.staking-card-image img {
+  border-radius: 8px;
+}
+
+.staking-card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+.staking-card-description {
+  color: #a0a0a0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.staking-card-details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  align-items: center;
+  width: 100%;
+}
+
+.staking-card-detail-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  width: auto;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+
+.staking-card-detail-icon {
+  margin-right: 8px;
+  color: #3772FF;
+  font-size: 1.1rem;
+}
+
+.staking-card-detail-item span {
+  font-size: 0.95rem;
+}
+
+.staking-card-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: auto;
+  width: 100%;
+}
+
+.stake-btn, .unstake-btn, .claim-btn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.stake-btn {
+  background-color: rgba(55, 114, 255, 0.2);
+  color: #3772FF;
+  border: 1px solid rgba(55, 114, 255, 0.4);
+}
+
+.stake-btn:hover {
+  background-color: rgba(55, 114, 255, 0.3);
+}
+
+.unstake-btn {
+  background-color: rgba(255, 59, 48, 0.1);
+  color: #FF3B30;
+  border: 1px solid rgba(255, 59, 48, 0.3);
+}
+
+.unstake-btn:hover {
+  background-color: rgba(255, 59, 48, 0.2);
+}
+
+.claim-btn {
+  background-color: rgba(52, 199, 89, 0.1);
+  color: #34C759;
+  border: 1px solid rgba(52, 199, 89, 0.3);
+}
+
+.claim-btn:hover {
+  background-color: rgba(52, 199, 89, 0.2);
+}
+
+.claim-btn-corner {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: rgba(52, 199, 89, 0.1);
+  color: #34C759;
+  border: 1px solid rgba(52, 199, 89, 0.3);
+  z-index: 10;
+}
+
+.claim-btn-corner:hover {
+  background-color: rgba(52, 199, 89, 0.2);
+}
+
+.rewards-line {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  background-color: rgba(255, 159, 0, 0.1);
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 159, 0, 0.6);
+  z-index: 10;
+}
+
+.rewards-value {
+  color: #FF9F00;
+  font-weight: 600;
+}
+
+/* Staking Pools Grid */
+.project-items-grid2 {
+  display: grid !important;
+ 
+  gap: 30px !important;
+  width: 100% !important;
+  padding: 10px !important;
+}
+
+@media (min-width: 768px) {
+  .project-items-grid2 {
+    grid-template-columns: 1fr !important;
+    gap: 25px !important;
+    padding: 15px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-items-grid2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr !important;
+    gap: 20px !important;
+    padding: 20px !important;
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "serviceOne": [
+    {
+      "img": "/images/icons/service-icon-01.png",
+      "title": "Smart Contract Development",
+      "desc": "We specialize in creating secure and efficient smart contracts for various blockchain platforms, enabling automated and trustless transactions."
+    },
+    {
+      "img": "/images/icons/service-icon-02.png",
+      "title": "dApp Development",
+      "desc": "Our team builds decentralized applications (dApps) that leverage blockchain technology to provide innovative solutions across industries."
+    },
+    {
+      "img": "/images/icons/service-icon-03.png",
+      "title": "Blockchain Consulting",
+      "desc": "Gain expert insights on integrating blockchain technology into your business processes, helping you stay ahead in the Web3 era."
+    },
+    {
+      "img": "/images/icons/service-icon-04.png",
+      "title": "Token Development",
+      "desc": "From concept to launch we leverage our expertise in creating and deploying custom tokens and cryptocurrencies, ensuring they are meticulously tailored to meet specific needs."
+    },
+    {
+      "img": "/images/icons/service-icon-05.png",
+      "title": "Enterprise Blockchain Solutions",
+      "desc": "Developing blockchain-based solutions for businesses and organizations to improve efficiency, security, and enchanced transparency."
+    },
+    {
+      "img": "/images/icons/service-icon-06.png",
+      "title": "NFT Development",
+      "desc": "Developing new non-fungible tokens (NFTs) for your unique digital assets or any other ideas for personal use or any other use case."
+    },
+    {
+      "img": "/images/icons/service-icon-08.png",
+      "title": "AI Development",
+      "desc": "Dedicated to developing intelligent algorithms, agents, and models that meet unique requirements. Options include custom chatbots or local deployments."
+    },
+    {
+      "img": "/images/icons/service-icon-09.png",
+      "title": "Blockchain Integration",
+      "desc": "Integrating blockchain solutions with existing systems and applications to connect the traditional web with the new technologies."
+    }
+  ],
+  "serviceTwo": [
+    {
+      "img": "/images/service/service-icon-01.png",
+      "imgLight": "/images/light/service/service-icon-01.png",
+      "title": "100% No-Risk, Money Back Guarantee!",
+      "desc": "Refunds will be issued within period of 14 days from the purchase date"
+    },
+    {
+      "img": "/images/service/service-icon-02.png",
+      "imgLight": "/images/light/service/service-icon-02.png",
+      "title": "Upgrade or Cancel Anytime",
+      "desc": "Passages there are many variations variations of of Lorem Ipsum available"
+    },
+    {
+      "img": "/images/service/service-icon-03.png",
+      "imgLight": "/images/light/service/service-icon-03.png",
+      "title": "Not sure yet, try the free version",
+      "desc": "Refunds will be issued within period of 14 days from the purchase date"
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+/* Custom Tab Styles */
+.rainbow-default-tab.style-three .tabs-navigation-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.rainbow-default-tab.style-three .nav-tabs {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 5px;
+  border: none;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  padding: 1px 10px;
+  margin: 0 auto;
+  max-width: 80%;
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.rainbow-default-tab.style-three .nav-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.rainbow-default-tab.style-three .nav-tabs .nav-item {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.rainbow-default-tab.style-three .nav-tabs .nav-link {
+  padding: 4px 10px;
+  border-radius: 10px;
+  border: none !important;
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #fff;
+  transition: all 0.3s ease;
+  min-width: auto;
+  height: auto;
+  box-shadow: none;
+  font-weight: 500;
+}
+
+/* Override rainbow-gradient-btn class */
+.rainbow-default-tab.style-three .nav-tabs .nav-link.rainbow-gradient-btn {
+  border: none !important;
+  background-image: none !important;
+  background-color: rgba(0, 0, 0, 0.15) !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.rainbow-default-tab.style-three .nav-tabs .nav-link.rainbow-gradient-btn::before,
+.rainbow-default-tab.style-three .nav-tabs .nav-link.rainbow-gradient-btn::after {
+  display: none !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Additional rule to catch any other elements */
+.rainbow-default-tab.style-three .nav-tabs .nav-item *,
+.rainbow-default-tab.style-three .nav-tabs .nav-link * {
+  border: none !important;
+  outline: none !important;
+}
+
+/* Override any other hover styles */
+.rainbow-default-tab.style-three .nav-tabs .nav-link:hover::before,
+.rainbow-default-tab.style-three .nav-tabs .nav-link:hover::after,
+.rainbow-default-tab.style-three .nav-tabs .nav-link.rainbow-gradient-btn:hover::before,
+.rainbow-default-tab.style-three .nav-tabs .nav-link.rainbow-gradient-btn:hover::after {
+  display: none !important;
+  background: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  opacity: 0 !important;
+}
+
+/* Global override for any rainbow-gradient-btn hover effects */
+.rainbow-gradient-btn:hover,
+.rainbow-gradient-btn:hover::before,
+.rainbow-gradient-btn:hover::after {
+  background: rgba(0, 0, 0, 0.25) !important;
+  background-image: none !important;
+  background-color: rgba(0, 0, 0, 0.25) !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.rainbow-default-tab.style-three .nav-tabs .nav-link .border-bottom-style {
+  display: none !important;
+}
+
+.rainbow-default-tab.style-three .nav-tabs .nav-link:hover,
+.rainbow-default-tab.style-three .nav-tabs .nav-link.rainbow-gradient-btn:hover {
+  background-color: rgba(0, 0, 0, 0.25) !important;
+  background-image: none !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none;
+}
+
+.rainbow-default-tab.style-three .nav-tabs .nav-link.active,
+.rainbow-default-tab.style-three .nav-tabs .nav-link.rainbow-gradient-btn.active {
+  background: linear-gradient(90deg, rgba(55, 114, 255, 0.3) 0%, rgba(55, 114, 255, 0.4) 100%) !important;
+  border: none !important;
+  outline: none !important;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(55, 114, 255, 0.7);
+  border-radius: 40px;
+}
+
+.rainbow-default-tab.style-three .nav-tabs .nav-link.active.rainbow-gradient-btn {
+  background: linear-gradient(90deg, rgba(55, 114, 255, 0.3) 0%, rgba(55, 114, 255, 0.4) 100%) !important;
+  border-radius: 40px;
+}
+
+.rainbow-default-tab.style-three .nav-tabs .nav-link.active.rainbow-gradient-btn:hover {
+  background: linear-gradient(90deg, rgba(55, 114, 255, 0.4) 0%, rgba(55, 114, 255, 0.5) 100%) !important;
+  border-radius: 40px;
+}
+
+.rainbow-default-tab.style-three .nav-tabs .generator-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rainbow-default-tab.style-three .nav-tabs .generator-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Navigation Arrows */
+.tab-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid #3772FF;
+  color: #3772FF;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(55, 114, 255, 0.5);
+}
+
+.tab-arrow:hover {
+  background-color: rgba(55, 114, 255, 0.2);
+  box-shadow: 0 0 20px rgba(55, 114, 255, 0.8);
+}
+
+.tab-arrow-left {
+  left: 0;
+}
+
+.tab-arrow-right {
+  right: 0;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .rainbow-default-tab.style-three .nav-tabs {
+    gap: 6px;
+    padding: 0 5px;
+    max-width: 100%;
+  }
+
+  .rainbow-default-tab.style-three .nav-tabs .nav-link {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .rainbow-default-tab.style-three .nav-tabs .generator-icon {
+    gap: 6px;
+  }
+
+  .rainbow-default-tab.style-three .nav-tabs .generator-icon img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .tab-arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+}

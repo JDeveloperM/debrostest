@@ -1,0 +1,123 @@
+.notificationContainer {
+  position: relative;
+}
+
+.notificationBtn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  padding: 5px;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #ff3e3e;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notificationDropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 320px;
+  background-color: #1e2329;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.notificationHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #2c3137;
+}
+
+.notificationHeader h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.markAllBtn {
+  background: none;
+  border: none;
+  color: #3772FF;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.markAllBtn:hover {
+  text-decoration: underline;
+}
+
+.notificationList {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.notificationItem {
+  padding: 12px 15px;
+  border-bottom: 1px solid #2c3137;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.notificationItem:hover {
+  background-color: #2c3137;
+}
+
+.notificationItem.unread {
+  background-color: rgba(55, 114, 255, 0.1);
+}
+
+.notificationItem.unread:hover {
+  background-color: rgba(55, 114, 255, 0.15);
+}
+
+.notificationText {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+.notificationTime {
+  font-size: 12px;
+  color: #8a8f98;
+}
+
+.emptyNotifications {
+  padding: 20px;
+  text-align: center;
+  color: #8a8f98;
+}
+
+.notificationFooter {
+  padding: 12px 15px;
+  text-align: center;
+  border-top: 1px solid #2c3137;
+}
+
+.viewAllLink {
+  color: #3772FF;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.viewAllLink:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,61 @@
+/* Custom Accordion Styles to match the design */
+.rainbow-accordion-style .card {
+  background: #1a1a1a;
+  border: 0;
+  border-radius: 8px !important;
+  margin-bottom: 15px;
+}
+
+.rainbow-accordion-style .card-header {
+  background-color: transparent;
+  border-bottom: 0 none;
+  box-shadow: none;
+  padding: 20px 30px;
+  margin-bottom: 0;
+}
+
+.rainbow-accordion-style .card-header button {
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  outline: none;
+  text-decoration: none;
+  box-shadow: none;
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  background: transparent;
+  position: relative;
+  border: none;
+}
+
+.rainbow-accordion-style .card-header button:not(.collapsed) {
+  color: #3f56ff;
+}
+
+.rainbow-accordion-style .card-header button::before {
+  position: absolute;
+  content: "-";
+  font-family: 'feather' !important;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.4s;
+  color: #3f56ff;
+}
+
+.rainbow-accordion-style .card-header button.collapsed::before {
+  content: "+";
+  color: white;
+}
+
+.rainbow-accordion-style .card-body {
+  padding: 0 30px 20px;
+  color: #acacac;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.rainbow-accordion-style .card-body p {
+  margin-bottom: 0;
+}

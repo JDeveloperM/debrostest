@@ -1,0 +1,72 @@
+{
+  "footer": [
+    {
+      "links": [
+        {
+          "title": "Qucik Links",
+          "innerItem": [
+            {
+              "link": "#",
+              "text": "Pages"
+            },
+            {
+              "link": "/blog",
+              "text": "Blog"
+            },
+            {
+              "link": "/contact",
+              "text": "Contact"
+            },
+            {
+              "link": "/utilize",
+              "text": "How to use"
+            },
+            {
+              "link": "/roadmap",
+              "text": "Roadmap"
+            }
+          ]
+        }
+      ],
+      "services": [
+        {
+          "title": "",
+          "innerItem": [
+  {
+    "link": "https://anchat.io",
+    "imgSrc": "/images/icons/video-g.png",
+    "alt": "",
+    "targetBlank": true
+  },
+  {
+    "link": "https://git.debros.io/DeBros/anyone-extension",
+    "imgSrc": "/images/icons/anyone2.png",
+    "alt": "",
+    "targetBlank": true
+  },
+  {
+    "link": "https://paymesol.app",
+    "imgSrc": "/images/icons/text-g.png",
+    "alt": "",
+    "targetBlank": true
+  },
+  {
+    "link": "https://git.debros.io/DeBros/network",
+    "imgSrc": "/images/icons/debrosnet.png",
+    "alt": "",
+    "targetBlank": true
+  }
+]
+
+        }
+      ],
+      "contact": [
+        {
+          "location": "8819 Ohio St. South Gate, North America, USA",
+          "mail": "example@domain.com",
+          "number": "1 386-688-3295"
+        }
+      ]
+    }
+  ]
+}

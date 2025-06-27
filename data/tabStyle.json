@@ -1,0 +1,154 @@
+{
+  "TabStyleOne": [
+    {
+      "title": "DeBros Network",
+      "img": "/images/generator-img/debros.png",
+      "imgLight": "/images/light/generator-img/chat-export-audio.png",
+      "menuId": "network-generator",
+      "text": "DeBros Network",
+      "target": "network-generate",
+      "iconImg": "/images/generator-img/debros.png",
+      "isSelect": true,
+      "subItem": [
+        {
+          "text": "Decentralized Ecosystem"
+        },
+        {
+          "text": "Peer-to-peer Application Deployment"
+        },
+        {
+          "text": "No Central Authority"
+        },
+        {
+          "text": "DePIN Hardware Nodes" 
+        }
+      ]
+      ,
+      "button": {
+        "label": "Documentation",
+        "href": "https://git.debros.io/DeBros/network",
+        "targetBlank": true
+      }
+      ,
+      "button2": {
+        "label": "Whitepaper",
+        "href": "/files/DeBros_Whitepaper.pdf",
+        "targetBlank": true
+      }
+    },
+    {
+      "title": "Solana POS System",
+      "img": "/images/generator-img/paymesol.png",
+      "imgLight": "/images/light/generator-img/chat-export-audio.png",
+      "menuId": "text-generator",
+      "text": "Payme.sol",
+      "target": "text-generate",
+      "iconImg": "/images/generator-img/paymesol.png",
+      "isSelect": false,
+      "subItem": [
+        {
+          "text": "Wallet Connection"
+        },
+        {
+          "text": "No transaction signing"
+        },
+        {
+          "text": "Open-source and based on Solana"
+        },
+        {
+          "text": "QR Code for fast payments"
+        }
+      ]
+      ,
+      "button": {
+        "label": "Launch App",
+        "href": "https://paymesol.app",
+        "targetBlank": true
+      }
+      ,
+      "button2": {
+        "label": "Documentation",
+        "href": "https://docs.paymesol.app",
+        "targetBlank": true
+      }
+    },
+    {
+      "title": "Chromium-based browser extension",
+      "img": "/images/generator-img/anyone-extension.png",
+      "imgLight": "/images/light/generator-img/chat-export-audio.png",
+      "menuId": "extension-generator",
+      "text": "ANyONe Extension",
+      "target": "extension-generate",
+      "iconImg": "/images/icons/extension-g.png",
+      "isSelect": false,
+      "subItem": [
+        {
+          "text": "Manage socks5 proxy settings"
+        },
+        {
+          "text": "Public proxy for anyone"
+        },
+        {
+          "text": "Privacy browsing with no tracking"
+        },
+        {
+          "text": "Quick access to all DeBros dApps"
+        }
+      ]
+      ,
+      "button": {
+        "label": "Get Extension",
+        "href": "https://git.debros.io/DeBros/anyone-extension",
+        "targetBlank": true
+      }
+      ,
+      "button2": {
+        "label": "Documentation",
+        "href": "https://git.debros.io/DeBros/anyone-extension/src/branch/main/README.md",
+        "targetBlank": true
+      }
+    },
+    {
+      "title": "Privacy-First Web Chat App",
+      "img": "/images/generator-img/anchat.png",
+      "imgLight": "/images/light/generator-img/chat-export-audio.png",
+      "menuId": "video-generator",
+      "text": "AnChat",
+      "target": "video-generate",
+      "iconImg": "/images/icons/video-g.png",
+      "isSelect": false,
+
+      "subItem": [
+        { "text": "Build on DeBros Network" },
+        { "text": "Powered by ANyONe" },
+        { "text": "Web3 & Data Ownership" },
+        { "text": "Wallet verification - No email or phone number needed" }
+      ]
+      ,
+      "button": {
+        "label": "Launch App",
+        "href": "https://anchat.io",
+        "targetBlank": true
+      }
+      ,
+      "button2": {
+        "label": "Documentation",
+        "href": "",
+        "targetBlank": true
+      }
+    }
+    
+  ],
+  "advanceTab": [
+    {
+      "tabId": "home",
+      "target": "home-tab",
+      "isSelect": true,
+      "menuText": "Payme.sol Video",
+      "video":"/videos/promo/payme-trailer.mp4",
+      "subTitle": "Promo Video",
+      "title": "Payme.sol Beta",
+      "desc": "Check the video to find out about Payme.sol in a couple of minutes."
+    }
+  ]
+}
