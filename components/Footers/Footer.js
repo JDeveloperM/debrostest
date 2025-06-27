@@ -4,7 +4,7 @@ import React from "react";
 
 import FooterData from "../../data/footer.json";
 
-import logo from "../../public/images/logo/logo2.png";
+import logo from "../../public/images/logo/logo.png";
 import FooterProps from "./FooterProps";
 
 const Footer = () => {

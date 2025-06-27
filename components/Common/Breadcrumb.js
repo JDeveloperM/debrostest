@@ -6,7 +6,7 @@ const Breadcrumb = ({ title, text, videoSrc }) => {
     <>
      <div className="breadcrumb-area breadcarumb-style-1" style={{
         backgroundColor: "#1a2029",
-        backgroundImage: "url(./images/bgbread.jpg)",
+        backgroundImage: "url(./images/bg/breadcrumb-bg.png)",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "top center"
