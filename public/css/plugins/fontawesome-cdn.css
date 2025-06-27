@@ -1,0 +1,33 @@
+/*!
+ * Font Awesome CDN Integration
+ * Using CDN instead of local files to reduce bundle size
+ */
+
+/* Import FontAwesome from CDN */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+/* Ensure compatibility with existing classes */
+.fa-sharp.fa-solid {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.fa-sharp.fa-regular {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 400;
+}
+
+/* Additional icon mappings for compatibility */
+.fa-star:before { content: "\f005"; }
+.fa-calendar-days:before { content: "\f073"; }
+.fa-arrow-right:before { content: "\f061"; }
+.fa-chevron-down:before { content: "\f078"; }
+.fa-bars:before { content: "\f0c9"; }
+.fa-rocket:before { content: "\f135"; }
+.fa-book:before { content: "\f02d"; }
+.fa-comments-question:before { content: "\e14e"; }
+.fa-gears:before { content: "\f085"; }
+.fa-right-to-bracket:before { content: "\f2f6"; }
+.fa-sidebar:before { content: "\f678"; }
+.fa-sidebar-flip:before { content: "\f679"; }
+.fa-x:before { content: "\f00d"; }

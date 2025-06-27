@@ -1,0 +1,84 @@
+/*!
+ * Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2023 Fonticons, Inc.
+ */
+
+/* Font Face Definitions - Only Essential Fonts */
+@font-face {
+  font-family: "Font Awesome 6 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../../fonts/fa-brands-400.woff2") format("woff2"), url("../../fonts/fa-brands-400.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../../fonts/fa-regular-400.woff2") format("woff2"), url("../../fonts/fa-regular-400.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../../fonts/fa-solid-900.woff2") format("woff2"), url("../../fonts/fa-solid-900.ttf") format("truetype");
+}
+
+/* Base Classes */
+.fa, .fa-brands, .fa-regular, .fa-solid, .fab, .far, .fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+
+.fa-solid, .fas {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.fa-regular, .far {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 400;
+}
+
+.fa-brands, .fab {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
+}
+
+/* Sharp variants */
+.fa-sharp.fa-solid {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.fa-sharp.fa-regular {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 400;
+}
+
+/* Common icon classes - Add specific icons as needed */
+.fa-star:before { content: "\f005"; }
+.fa-calendar-days:before { content: "\f073"; }
+.fa-arrow-right:before { content: "\f061"; }
+.fa-chevron-down:before { content: "\f078"; }
+.fa-bars:before { content: "\f0c9"; }
+.fa-rocket:before { content: "\f135"; }
+.fa-book:before { content: "\f02d"; }
+.fa-comments-question:before { content: "\e14e"; }
+.fa-gears:before { content: "\f085"; }
+.fa-right-to-bracket:before { content: "\f2f6"; }
+.fa-sidebar:before { content: "\f678"; }
+.fa-sidebar-flip:before { content: "\f679"; }
+.fa-x:before { content: "\f00d"; }
+
+/* Add more icons as needed based on your usage */

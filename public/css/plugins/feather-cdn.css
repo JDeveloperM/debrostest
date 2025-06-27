@@ -1,0 +1,27 @@
+/*!
+ * Feather Icons CDN Integration
+ * Using CDN instead of local files to reduce bundle size
+ */
+
+/* Import Feather Icons from CDN */
+@import url('https://cdn.jsdelivr.net/npm/feather-icons@4.29.0/dist/feather.css');
+
+/* Ensure compatibility with existing classes */
+[class^="feather-"], [class*=" feather-"] {
+  font-family: 'feather' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Common feather icons used in the app */
+.feather-search:before { content: "\e9c1"; }
+.feather-loader:before { content: "\e986"; }
+.feather-user:before { content: "\e9f1"; }
+.feather-menu:before { content: "\e98f"; }
+.feather-arrow-right:before { content: "\e912"; }
