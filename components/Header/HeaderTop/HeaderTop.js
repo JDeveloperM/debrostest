@@ -41,7 +41,7 @@ const HeaderTop = () => {
             className="close-button bgsection-activation"
             onClick={() => setToggle(!toggleTop)}
           >
-            <i className="fa-sharp fa-regular fa-x"></i>
+            ✕
           </button>
         </div>
       </div>
