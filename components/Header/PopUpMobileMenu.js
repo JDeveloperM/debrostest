@@ -52,7 +52,7 @@ const PopupMobileMenu = () => {
               className="close-button"
               onClick={() => setActiveMobileMenu(false)}
             >
-              <i className="fa-sharp fa-regular fa-xmark"></i>
+              ✕
             </button>
           </div>
         </div>

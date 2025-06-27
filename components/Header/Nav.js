@@ -49,7 +49,7 @@ const Nav = () => {
           >
             {data.text}
             {data.isIcon ? (
-              <i className="fa-regular fa-chevron-down"></i>
+              <span style={{ marginLeft: '5px' }}>▼</span>
             ) : (
               ""
             )}
@@ -63,7 +63,7 @@ const Nav = () => {
           >
             {data.text}
             {data.isIcon ? (
-              <i className="fa-regular fa-chevron-down"></i>
+              <span style={{ marginLeft: '5px' }}>▼</span>
             ) : (
               ""
             )}
