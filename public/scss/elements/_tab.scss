@@ -47,7 +47,7 @@
         }
     }
 
-    // Tab Content 
+    // Tab Content
     .rainbow-tab-content {
         background: var(--color-lessdark);
         padding: 40px;
@@ -334,10 +334,13 @@
 
 .img-bg-shape {
     position: relative;
-    position: relative;
     padding: 0px 0 24px 0px;
-    background: black;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 
     img {
         border-radius: 14px;
@@ -390,5 +393,18 @@
             }
 
         }
+    }
+}
+
+// Glass shine animation
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: 100%;
     }
 }

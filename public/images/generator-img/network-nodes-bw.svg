@@ -1,0 +1,83 @@
+<svg width="569" height="483" viewBox="0 0 569 483" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="569" height="483" fill="#000000"/>
+
+  <!-- Decentralized Network Nodes (All Equal) -->
+  <circle cx="150" cy="120" r="15" fill="#ffffff" stroke="#cccccc" stroke-width="1"/>
+  <circle cx="420" cy="120" r="15" fill="#ffffff" stroke="#cccccc" stroke-width="1"/>
+  <circle cx="500" cy="200" r="15" fill="#ffffff" stroke="#cccccc" stroke-width="1"/>
+  <circle cx="450" cy="350" r="15" fill="#ffffff" stroke="#cccccc" stroke-width="1"/>
+  <circle cx="280" cy="400" r="15" fill="#ffffff" stroke="#cccccc" stroke-width="1"/>
+  <circle cx="120" cy="350" r="15" fill="#ffffff" stroke="#cccccc" stroke-width="1"/>
+  <circle cx="70" cy="200" r="15" fill="#ffffff" stroke="#cccccc" stroke-width="1"/>
+  <circle cx="285" cy="180" r="15" fill="#ffffff" stroke="#cccccc" stroke-width="1"/>
+  <circle cx="350" cy="260" r="15" fill="#ffffff" stroke="#cccccc" stroke-width="1"/>
+  <circle cx="220" cy="280" r="15" fill="#ffffff" stroke="#cccccc" stroke-width="1"/>
+
+  <!-- Peer-to-Peer Connections -->
+  <!-- Node 1 connections -->
+  <line x1="150" y1="120" x2="420" y2="120" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+  <line x1="150" y1="120" x2="285" y2="180" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+  <line x1="150" y1="120" x2="70" y2="200" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+
+  <!-- Node 2 connections -->
+  <line x1="420" y1="120" x2="500" y2="200" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+  <line x1="420" y1="120" x2="285" y2="180" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+  <line x1="420" y1="120" x2="350" y2="260" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+
+  <!-- Node 3 connections -->
+  <line x1="500" y1="200" x2="350" y2="260" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+  <line x1="500" y1="200" x2="450" y2="350" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+
+  <!-- Node 4 connections -->
+  <line x1="450" y1="350" x2="280" y2="400" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+  <line x1="450" y1="350" x2="350" y2="260" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+
+  <!-- Node 5 connections -->
+  <line x1="280" y1="400" x2="120" y2="350" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+  <line x1="280" y1="400" x2="220" y2="280" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+
+  <!-- Node 6 connections -->
+  <line x1="120" y1="350" x2="70" y2="200" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+  <line x1="120" y1="350" x2="220" y2="280" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+
+  <!-- Node 7 connections -->
+  <line x1="70" y1="200" x2="285" y2="180" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+  <line x1="70" y1="200" x2="220" y2="280" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+
+  <!-- Node 8 connections -->
+  <line x1="285" y1="180" x2="350" y2="260" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+  <line x1="285" y1="180" x2="220" y2="280" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+
+  <!-- Node 9 connections -->
+  <line x1="350" y1="260" x2="220" y2="280" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+
+  <!-- Additional cross-connections for redundancy -->
+  <line x1="150" y1="120" x2="220" y2="280" stroke="#cccccc" stroke-width="1" opacity="0.4" stroke-dasharray="3,3"/>
+  <line x1="420" y1="120" x2="120" y2="350" stroke="#cccccc" stroke-width="1" opacity="0.4" stroke-dasharray="3,3"/>
+  <line x1="500" y1="200" x2="280" y2="400" stroke="#cccccc" stroke-width="1" opacity="0.4" stroke-dasharray="3,3"/>
+
+  <!-- Network Activity Indicators -->
+  <circle cx="150" cy="120" r="2" fill="#ffffff" opacity="0.8">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="420" cy="120" r="2" fill="#ffffff" opacity="0.8">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="285" cy="180" r="2" fill="#ffffff" opacity="0.8">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="350" cy="260" r="2" fill="#ffffff" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

@@ -20,6 +20,7 @@ import BrandList from "../Brands/BrandList";
 import TabStyleOne from "../TabStyles/TabStyle-One";
 import ServiceStyleOne from "../Services/ServiceStyle-One";
 import AdvanceTab from "../TabStyles/AdvanceTab";
+import FeaturesEight from "../Features/FeaturesEight";
 
 import { useAppContext } from "@/context/Context";
 import HashLink from "../Common/HashLink"; // Use HashLink instead of Next.js Link
@@ -151,26 +152,14 @@ const Home = () => {
           <div className="row">
             <div className="col-lg-12">
               <div
-                className="section-title text-center pb--60"
+                className="section-title text-center pb--30"
                 data-sal="slide-up"
                 data-sal-duration="700"
                 data-sal-delay="100"
               >
-                <h4 className="subtitle">
-                  <span className="theme-gradient">
-                  The Dawn of Web3: Empowering a Decentralized Future
-                  </span>
-                </h4>
+                
 
-                {/* Using SpotlightCard for the Web3 description */}
-                <SpotlightCard
-                  className="mb-5"
-                  spotlightColor="rgba(58, 106, 207, 0.3)"
-                >
-                  <h3 className="title5 mb--0" style={{textAlign: "justify", fontSize: "1.8rem"}}>
-                    <span style={{color: "#3A6ACF"}}>Web3 </span>signifies a pivotal shift in the digital landscape, empowering individuals and collectives alike. Through the adoption of <span style={{color: "#3A6ACF"}}>Blockchain </span> technology, it constructs a <span style={{color: "#3A6ACF"}}>decentralized </span>, <span style={{color: "#3A6ACF"}}>trustless</span>, and <span style={{color: "#3A6ACF"}}>transparent internet</span>. This environment empowers users with control over their data, financial autonomy, and the quality of their digital interactions. <span style={{color: "#3A6ACF"}}><br></br><br></br>Web3 </span> catalyzes <span style={{color: "#3A6ACF"}}>innovation</span>, democratizes financial services, and fosters new avenues for <span style={{color: "#3A6ACF"}}>cooperation</span> and <span style={{color: "#3A6ACF"}}>creativity</span>. With its capacity to redefine industries and societies, <span style={{color: "#3A6ACF"}}>Web3 </span> promises a vibrant <span style={{color: "#3A6ACF"}}>future</span> for the internet. <span style={{color: "#3A6ACF"}}>DeBros </span> is at the forefront, bringing you applications and technologies that look <span style={{color: "#3A6ACF"}}>beyond</span> the <span style={{color: "#3A6ACF"}}>horizon</span>, redefining the digital experience through <span style={{color: "#3A6ACF"}}>Web3</span>.
-                  </h3>
-                </SpotlightCard>
+
               </div>
             </div>
           </div>
@@ -222,72 +211,116 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="row justify-content-center g-5 mt--20 mb--40"> {/* g-5 for gap between cards */}
+          <div className="row justify-content-center g-4 mt--20 mb--40">
             {/* Step 1 Card */}
             <div className="col-lg-4 col-md-6 col-sm-12" data-sal="slide-up" data-sal-duration="700" data-sal-delay="200">
-              <SpotlightCard
-                className="h-100" // Ensure cards have same height if content varies
-                spotlightColor="rgba(58, 106, 207, 0.3)"
-                padding="p-6" // Adjusted padding
-                borderRadius="rounded-2xl" // Slightly less rounded
+              <div
+                className="feature-card h-100 p-4 d-flex flex-column justify-content-center align-items-center text-center"
+                style={{
+                  background: 'rgba(26, 26, 26, 0.4)',
+                  backdropFilter: 'blur(20px)',
+                  WebkitBackdropFilter: 'blur(20px)',
+                  border: '1px solid rgba(58, 106, 207, 0.2)',
+                  borderRadius: '20px',
+                  minHeight: '300px',
+                  transition: 'all 0.4s ease',
+                  boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-8px)';
+                  e.currentTarget.style.borderColor = 'rgba(58, 106, 207, 0.6)';
+                  e.currentTarget.style.boxShadow = '0 20px 40px rgba(58, 106, 207, 0.2)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0px)';
+                  e.currentTarget.style.borderColor = 'rgba(58, 106, 207, 0.2)';
+                  e.currentTarget.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.3)';
+                }}
               >
-                <div className="text-center">
-                  <div className="mb-4">
-                    {/* You can add an icon here if you have one */}
-                    <span style={{ fontSize: '5rem', color: '#3A6ACF' }}>🌐</span>
-                  </div>
-                  <h3 className="mb-3">
-                    <span style={{color: "#3A6ACF"}}>DeBros HUB</span>
-                  </h3>
-                  <p className="fs-5" style={{ color: '#ccc' }}>
-                    Access our intuitive dashboard to publish your projects or discover and join exciting ventures from other developers and teams. A central hub for Web3 collaboration.
-                  </p>
+                <div className="feature-icon mb-4">
+                  <span style={{ fontSize: '4rem', color: '#3A6ACF' }}>🌐</span>
                 </div>
-              </SpotlightCard>
+                <h4 className="feature-title mb-3" style={{ color: 'white', fontSize: '1.8rem', fontWeight: '600' }}>
+                  DeBros HUB
+                </h4>
+                <p className="feature-description" style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '1.1rem', lineHeight: '1.6' }}>
+                  Access our intuitive dashboard to publish your projects or discover and join exciting ventures from other developers and teams. A central hub for Web3 collaboration.
+                </p>
+              </div>
             </div>
-            
+
             {/* Step 2 Card */}
             <div className="col-lg-4 col-md-6 col-sm-12" data-sal="slide-up" data-sal-duration="700" data-sal-delay="300">
-              <SpotlightCard
-                className="h-100"
-                spotlightColor="rgba(58, 106, 207, 0.3)"
-                padding="p-6"
-                borderRadius="rounded-2xl"
+              <div
+                className="feature-card h-100 p-4 d-flex flex-column justify-content-center align-items-center text-center"
+                style={{
+                  background: 'rgba(26, 26, 26, 0.4)',
+                  backdropFilter: 'blur(20px)',
+                  WebkitBackdropFilter: 'blur(20px)',
+                  border: '1px solid rgba(58, 106, 207, 0.2)',
+                  borderRadius: '20px',
+                  minHeight: '300px',
+                  transition: 'all 0.4s ease',
+                  boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-8px)';
+                  e.currentTarget.style.borderColor = 'rgba(58, 106, 207, 0.6)';
+                  e.currentTarget.style.boxShadow = '0 20px 40px rgba(58, 106, 207, 0.2)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0px)';
+                  e.currentTarget.style.borderColor = 'rgba(58, 106, 207, 0.2)';
+                  e.currentTarget.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.3)';
+                }}
               >
-                <div className="text-center">
-                  <div className="mb-4">
-                    <span style={{ fontSize: '5rem', color: '#3A6ACF' }}>🗳️</span>
-                  </div>
-                  <h3 className="mb-3">
-                    <span style={{color: "#3A6ACF"}}>Governance</span>
-                  </h3>
-                  <p className="fs-5" style={{ color: '#ccc' }}>
-                    Utilize DeBros NFTs and tokens for governance rights within the DAO. Participate in decision-making and earn staking rewards for your contributions to the ecosystem.
-                  </p>
+                <div className="feature-icon mb-4">
+                  <span style={{ fontSize: '4rem', color: '#3A6ACF' }}>🗳️</span>
                 </div>
-              </SpotlightCard>
+                <h4 className="feature-title mb-3" style={{ color: 'white', fontSize: '1.8rem', fontWeight: '600' }}>
+                  Governance
+                </h4>
+                <p className="feature-description" style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '1.1rem', lineHeight: '1.6' }}>
+                  Utilize DeBros NFTs and tokens for governance rights within the DAO. Participate in decision-making and earn staking rewards for your contributions to the ecosystem.
+                </p>
+              </div>
             </div>
-            
+
             {/* Step 3 Card */}
             <div className="col-lg-4 col-md-6 col-sm-12" data-sal="slide-up" data-sal-duration="700" data-sal-delay="400">
-              <SpotlightCard
-                className="h-100"
-                spotlightColor="rgba(58, 106, 207, 0.3)"
-                padding="p-6"
-                borderRadius="rounded-2xl"
+              <div
+                className="feature-card h-100 p-4 d-flex flex-column justify-content-center align-items-center text-center"
+                style={{
+                  background: 'rgba(26, 26, 26, 0.4)',
+                  backdropFilter: 'blur(20px)',
+                  WebkitBackdropFilter: 'blur(20px)',
+                  border: '1px solid rgba(58, 106, 207, 0.2)',
+                  borderRadius: '20px',
+                  minHeight: '300px',
+                  transition: 'all 0.4s ease',
+                  boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-8px)';
+                  e.currentTarget.style.borderColor = 'rgba(58, 106, 207, 0.6)';
+                  e.currentTarget.style.boxShadow = '0 20px 40px rgba(58, 106, 207, 0.2)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0px)';
+                  e.currentTarget.style.borderColor = 'rgba(58, 106, 207, 0.2)';
+                  e.currentTarget.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.3)';
+                }}
               >
-                <div className="text-center">
-                  <div className="mb-4">
-                    <span style={{ fontSize: '5rem', color: '#3A6ACF' }}>🎁</span>
-                  </div>
-                  <h3 className="mb-3">
-                    <span style={{color: "#3A6ACF"}}>Exclusive Rewards</span>
-                  </h3>
-                  <p className="fs-5" style={{ color: '#ccc' }}>
-                    Benefit from airdrops from new, innovative projects successfully launched via our dashboard. Get rewarded for being an active and early member of the DeBros community.
-                  </p>
+                <div className="feature-icon mb-4">
+                  <span style={{ fontSize: '4rem', color: '#3A6ACF' }}>🎁</span>
                 </div>
-              </SpotlightCard>
+                <h4 className="feature-title mb-3" style={{ color: 'white', fontSize: '1.8rem', fontWeight: '600' }}>
+                  Exclusive Rewards
+                </h4>
+                <p className="feature-description" style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '1.1rem', lineHeight: '1.6' }}>
+                  Benefit from airdrops from new, innovative projects successfully launched via our dashboard. Get rewarded for being an active and early member of the DeBros community.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -306,6 +339,58 @@ const Home = () => {
           <Image src={bgShape} width={630} height={879} alt="Bg Shape" />
         </div>
       </div>
+
+      {/* DeBros Core Features Section Start */}
+      <div className="rainbow-service-area" style={{ backgroundColor: '#0a0a0a', color: 'white', paddingTop: '40px', paddingBottom: '0px' }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div
+                className="section-title text-center"
+                data-sal="slide-up"
+                data-sal-duration="700"
+                data-sal-delay="100"
+              >
+                <h4 className="subtitle">
+                  <span className="theme-gradient">The DeBros Advantage</span>
+                </h4>
+                <h2 className="title mb--20">Powering the Next Generation of Web3</h2>
+                <p className="description" style={{ maxWidth: '700px', margin: '0 auto 20px', fontSize: '1.6rem' }}>
+                  Experience the cutting-edge features that make DeBros the premier platform for decentralized development and community governance.
+                </p>
+              </div>
+              {/* CTA Button */}
+              <div className="row justify-content-center">
+                <div className="col-lg-12 text-center mt-3 mb-4" data-sal="slide-up" data-sal-duration="700" data-sal-delay="500">
+                  <HashLink href="https://hub.debros.io" target="_blank" className="btn-default btn-large" style={{
+                    background: 'linear-gradient(95deg, #3A6ACF 15%, #5533ff 45%, #5533ff 75%, #3A6ACF 100%)',
+                    border: 'none',
+                    padding: '12px 35px',
+                    borderRadius: '8px',
+                    color: 'white',
+                    fontWeight: 'bold',
+                    textDecoration: 'none',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    lineHeight: '1',
+                    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                    boxShadow: '0 4px 15px rgba(58, 106, 207, 0.3)'
+                  }}
+                  onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
+                  onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0px)'}
+                  >
+                    Join the DeBros Network
+                  </HashLink>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Features Eight Section */}
+      <FeaturesEight />
 
       <div className="rainbow-collobration-area rainbow-section-gap-big">
         <div className="container">

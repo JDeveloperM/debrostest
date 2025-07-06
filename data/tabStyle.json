@@ -2,8 +2,8 @@
   "TabStyleOne": [
     {
       "title": "DeBros Network",
-      "img": "/images/generator-img/debros.png",
-      "imgLight": "/images/light/generator-img/chat-export-audio.png",
+      "img": "/images/generator-img/dbnetwork.png",
+      "imgLight": "/images/generator-img/dbnetwork.png",
       "menuId": "network-generator",
       "text": "DeBros Network",
       "target": "network-generate",
@@ -43,7 +43,7 @@
       "menuId": "text-generator",
       "text": "Payme.sol",
       "target": "text-generate",
-      "iconImg": "/images/generator-img/paymesol.png",
+      "iconImg": "/images/icons/text-g.png",
       "isSelect": false,
       "subItem": [
         {

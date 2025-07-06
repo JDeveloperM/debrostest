@@ -13,6 +13,12 @@ const Team = () => {
     <>
       <div className="rbt-team-area bg-color-1 mt--40 pb--0">
       <div className="container text-justify">
+
+      {/* Web3 Description */}
+      <h4 className="title mb--40" style={{ textAlign: "justify", fontSize: "17px" }}>
+        <span style={{color: "#3A6ACF"}}>Web3 </span>signifies a pivotal shift in the digital landscape, empowering individuals and collectives alike. Through the adoption of <span style={{color: "#3A6ACF"}}>Blockchain </span> technology, it constructs a <span style={{color: "#3A6ACF"}}>decentralized </span>, <span style={{color: "#3A6ACF"}}>trustless</span>, and <span style={{color: "#3A6ACF"}}>transparent internet</span>. This environment empowers users with control over their data, financial autonomy, and the quality of their digital interactions. <span style={{color: "#3A6ACF"}}><br></br><br></br>Web3 </span> catalyzes <span style={{color: "#3A6ACF"}}>innovation</span>, democratizes financial services, and fosters new avenues for <span style={{color: "#3A6ACF"}}>cooperation</span> and <span style={{color: "#3A6ACF"}}>creativity</span>. With its capacity to redefine industries and societies, <span style={{color: "#3A6ACF"}}>Web3 </span> promises a vibrant <span style={{color: "#3A6ACF"}}>future</span> for the internet. <span style={{color: "#3A6ACF"}}>DeBros </span> is at the forefront, bringing you applications and technologies that look <span style={{color: "#3A6ACF"}}>beyond</span> the <span style={{color: "#3A6ACF"}}>horizon</span>, redefining the digital experience through <span style={{color: "#3A6ACF"}}>Web3</span>.
+      </h4>
+
       <h3 className="theme-gradient w-600 mb--40">Mission and Vision</h3>
       <h4 className="title mb--4" style={{ textAlign: "justify", fontSize: "17px" }}>
   DeBros is not just a team; it's a collective of like-minded "brothers" — developers, engineers, and researchers — united by a common vision to craft decentralized applications and solutions in the realms of blockchain, AI, and Web3. We believe in equality among us, collaborating without geographical boundaries or nationality, driven by a shared goal of equitable and decentralized provision of technology and applications.
