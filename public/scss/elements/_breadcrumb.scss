@@ -2,18 +2,43 @@
     Breadcrump Area 
 ======================*/
 .breadcrumb-style-1 {
-    background-color: var(--color-blackest) !important;
-    background: url(../../images/bg/breadcrumb-bg.png); /* Using correct breadcrumb background image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
+    background-color: #0a0a0a !important;
+    min-height: 33.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 
 
 .breadcrumb-inner {
     text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 100%;
 
     .title {
+        color: white !important;
+        font-size: 48px !important;
+        font-weight: 700 !important;
+        margin-bottom: 20px;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+
+        @media #{$md-layout} {
+            font-size: 40px !important;
+        }
+
+        @media #{$sm-layout} {
+            font-size: 32px !important;
+        }
+
         br {
             @media #{$md-layout} {
                 display: none;
@@ -29,14 +54,19 @@
         &.page-list {
             @extend %liststyle;
             margin-top: 16px;
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
 
             li {
-                display: inline-block;
-                color: var(--color-body);
+                display: inline-block !important;
+                color: rgba(255, 255, 255, 0.9) !important;
                 padding: 0 12px;
                 position: relative;
                 font-size: 16px;
                 margin: 0;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+                visibility: visible !important;
 
                 &::after {
                     position: absolute;
@@ -51,11 +81,13 @@
                 }
 
                 a {
-                    color: var(--color-body);
+                    color: rgba(255, 255, 255, 0.9) !important;
                     transition: .5s;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+                    visibility: visible !important;
 
                     &:hover {
-                        color: var(--color-primary);
+                        color: var(--color-primary) !important;
                     }
                 }
 

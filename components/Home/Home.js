@@ -36,8 +36,42 @@ const Home = () => {
       setVisibleIndex((prevIndex) => (prevIndex + 1) % 3);
     }, 2000);
 
+    // Cursor tracking for hexagon animation with trailing effect
+    const cursor = document.querySelector('#cursor');
+    const hexagons = document.querySelectorAll('.hexagon');
+    let hoveredHexagons = new Set();
+
+    const onMouseChangePosition = (event) => {
+      if (cursor) {
+        cursor.style.left = event.clientX + 'px';
+        cursor.style.top = event.clientY + 'px';
+      }
+    };
+
+    // Add trailing effect to hexagons
+    const addTrailingEffect = () => {
+      hexagons.forEach((hexagon, index) => {
+        hexagon.addEventListener('mouseenter', () => {
+          hexagon.classList.add('hexagon-trail');
+          hoveredHexagons.add(hexagon);
+
+          // Remove the trail effect after a delay
+          setTimeout(() => {
+            hexagon.classList.remove('hexagon-trail');
+            hoveredHexagons.delete(hexagon);
+          }, 1500 + Math.random() * 500); // Random delay between 1.5-2s
+        });
+      });
+    };
+
+    document.addEventListener('mousemove', onMouseChangePosition);
+
+    // Initialize trailing effect after a short delay to ensure hexagons are rendered
+    setTimeout(addTrailingEffect, 100);
+
     return () => {
       clearInterval(intervalId);
+      document.removeEventListener('mousemove', onMouseChangePosition);
     };
   }, []);
 
@@ -49,7 +83,7 @@ const Home = () => {
       >
 
         <div
-  className="container-fluid"
+  className="container-fluid hexagon-hero-container"
   style={{
     position: "relative",
     height: "100vh",
@@ -59,33 +93,24 @@ const Home = () => {
     overflow: "hidden",
   }}
 >
-  {/* Video Background */}
-  <video
-    className="background-video"
-    style={{
-      position: "absolute",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-      objectFit: "cover",
-      zIndex: -1,
-    }}
-    autoPlay
-    loop
-    muted
-    playsInline
-  >
-    <source src="/images/bg/DeBros_Videos_Website_cube.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+  {/* Hexagon Background */}
+  <div className="hexagon-background">
+    <div id="cursor"></div>
+    {Array.from({ length: 28 }, (_, rowIndex) => (
+      <div key={rowIndex} className="hexagon-row">
+        {Array.from({ length: 40 }, (_, hexIndex) => (
+          <div key={hexIndex} className="hexagon"></div>
+        ))}
+      </div>
+    ))}
+  </div>
 
   {/* Inner Text */}
   <div
     className="text-content text-center"
     style={{
       position: "relative",
-      zIndex: 1,
+      zIndex: 10,
       color: "#fff",
       padding: "20px",
       maxWidth: "max-content",

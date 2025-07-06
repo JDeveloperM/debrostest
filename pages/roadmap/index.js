@@ -44,7 +44,7 @@ const RoadmapPage = () => {
           <Breadcrumb
             title="Our Roadmap"
             text="Roadmap"
-            videoSrc="/images/bgbread.mp4"
+            useHexagonBanner={true}
           />
 
           <Roadmap />

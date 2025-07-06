@@ -43,7 +43,7 @@ const TeamPage = () => {
           <Breadcrumb
             title="About Us"
             text="About"
-            videoSrc="../images/bgbread.mp4"
+            useHexagonBanner={true}
           />
 
           <Team />
